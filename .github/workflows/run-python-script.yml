@@ -30,7 +30,7 @@ jobs:
         password: ${{secrets.EMAIL_PASSWORD}}
         subject: "FAILED: ${{github.repository}} run job"
         body: GitHub Actions run job for ${{github.repository}} failed!
-        to: ""
+        to: dummy
         bcc: ${{secrets.EMAIL_LIST}}
         from: ${{secrets.EMAIL_FROM}}
         content_type: text/html
